@@ -10,7 +10,7 @@ In this assignment you will implement a simple rasterizer, including features li
 
 ## Getting set up
 
-You can either [download](https://github.com/CS184-sp16/asst1_rasterizester/archive/master.zip) the zipped assignment straight to your computer or clone it from GitHub using the command 
+You can either [download](https://github.com/CS184-sp16/asst1_rasterizester/archive/master.zip) the zipped assignment straight to your computer or clone it from [GitHub](https://github.com/CS184-sp16/asst1_rasterizester) using the command 
 
     $ git clone https://github.com/CS184-sp16/asst1_rasterizester.git
 
