@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<style>  
+    div.padded {  
+      padding-top: 0px;  
+      padding-right: 100px;  
+      padding-bottom: 0.25in;  
+      padding-left: 100px;  
+    }  
+  </style> 
+<title>Your Name  |  CS 184</title>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+</head>
+<body>
+<br />
+<h1 align="middle">Assignment 1: Rasterizester</h1>
+    <h2 align="middle">Your Name</h2>
+
+    <div class="padded">
+        <p>Use this section to write an overview of the assignment. All of the text in your write-up should be <em>in your own words</em>. If you need to add additional HTML features to this document, you can search the <a href="http://www.w3schools.com/">http://www.w3schools.com/</a> website for instructions. To edit the HTML, you can just copy and paste existing chunks and fill in the text and image file names appropriately.</p>
+        <o>The website writeup is intended to be a self-contained walkthrough of the assignment: we want this to be a piece of work which showcases your understanding of relevant concepts through both rendered images as well as written explanations about what you did to complete each part of the assignment. Try to be as clear and organized as possible when writing about your own output files or extensions to the assignment. We want to understand what you've achieved and how you've done it!</p> 
+        <p>If you are well-versed in web development, feel free to ditch this template and make a better looking page. Just make sure that you include all the components as we've laid them out here. </p>
+        <p>For required images, keep the image size fixed at the native width of the file to avoid artifacts. You might want to adjust your rasterizester window size down to be less than 1000 pixels wide if you are working on a retina display screen, since the 1920 by 1280 images will be enormous on normal monitors.</p>
+
+    <h2 align="middle">Part 1: Rasterizing Lines</h2>
+        <p>Describe what you did in Part 1. Show your result here. You could talk about which line rasterizing algorithm you used, any issues you ran into and had to debug (with example images), and any clever modifications you made to the algorithm to reduce the number of special cases.</p>
+        <div align="left">
+            <table style="width=100%">
+                <tr>
+                    <td align="middle">
+                    <img src="images/example_image.jpg" width="800px" />
+                    <figcaption align="middle">Results Caption: include at least one png of svg/basic/test2.svg in this section</figcaption>
+                </tr>
+            </table>
+        </div>
+        <p>Here is an example of how to include a simple formula:</p>
+        <p align="middle"><pre align="middle">a^2 + b^2 = c^2</pre></p>
+        <p>or, alternatively, you can include an image of a LaTex formula.</p>
+
+    <h2 align="middle">Part 2: Rasterizing single-color triangles</h2>
+        <p>Describe what you did in Part 2. Show your result here. Explain any bugs you had to work through, with pictures if possible. Explain any special optimizations you did beyond simple bounding box triangle rasterization, with a timing comparison table (we suggest using the c++ clock() function around the svg.draw() command in DrawRend::redraw() to compare millisecond timings with your various optimizations off and on).</p>
+        <p>Here is an example table. You could put timing comparisons here, for example.</p>
+        <div align="left">
+            <table style="width=100%" border="1px" cellpadding="10px">
+                <tr>
+                    <td>
+                    <p>Row 1, Col 1</p>
+                    <td>
+                    <p>Row 1, Col 2</p>
+                    <td>
+                    <p>Row 1, Col 3</p>
+                <tr>
+                    <td>
+                    <p>Row 2, Col 1</p>
+                    <td>
+                    <p>Row 2, Col 2</p>
+                    <td>
+                    <p>Row 2, Col 3</p>
+                </tr>
+            </table>
+        </div>
+
+    <h2 align="middle">Part 3: Antialiasing triangles</h2>
+        <p>Describe what you did in Part 3. Show your result here. Explain any bugs you had to work through, with pictures if possible. Explain the basic structure of the modifications you made to the DrawRend rasterization pipeline in order to implement supersampling. If you implement alternative antialiasing methods, describe them and include comparison pictures demonstrating the difference between your method and grid-based supersampling.</p>
+
+    <h2 align="middle">Part 4: Transforms</h2>
+        <p>Describe what you did in Part 4. Show your result here. Explain any bugs you had to work through, with pictures if possible. Describe the new svg file you created, and show the rasterized result. Explain the reasoning behind your use of the transform stack in your new file. If you added any extra features to the GUI, describe them, and depict the result if it is visualizable (e.g. if you add rotation controls).</p>
+
+    <h2 align="middle">Part 5: Barycentric coordinates</h2>
+        <p>Describe what you did in Part 5. Introduce and explain barycentric coordinates, perhaps with an svg file that plots a single triangle with one red, one green, and one blue vertex. Show your result here. Explain any bugs you had to work through, with pictures if possible. Include at least one png of svg/basic/test7.svg. If you make any additional images with color gradients, include them.</p>
+
+    <h2 align="middle">Part 6: Pixel sampling for texture mapping</h2>
+        <p>Describe what you did in Part 6. Discuss the two different pixel sampling methods. Show a good example from svg/texmap/ of a case where bilinear looks much better than nearest sampling. Talk about when there will be a large difference between the two methods and when the difference will not matter.</p>
+
+    <h2 align="middle">Part 7: Level sampling with mipmaps for texture mapping</h2>
+        <p>Describe what you did in Part 7. Pull some png images from the internet and create your own svg files to demonstrate the strengths and weaknesses of various techniques at different zoom levels. You can take existing files in svg/texmap/ and replace the texture filename to try out new images. Show at least one example (using a png file you find yourself) comparing all four combinations of one of L_ZERO and L_NEAREST with one of P_NEAREST and P_BILINEAR at a zoomed out viewpoint. If you implement any extra filtering methods, describe them and show comparisons.</p>
+
+    <h2 align="middle">Part 8: My drawing</h2>
+        <p>Describe your original drawing and include a picture of it. This part is extremely open ended, and if you decide to devote a lot of time to making an awesome picture, it's worth explaining how you did it!</p>
+
+    <h2 align="middle">A Few Notes On Webpages</h2>
+        <p>Here are a few problems students have encountered in the past. You will probably encounter these problems at some point, so don't wait until right before the deadline to check that everything is working. Test your website on the instructional machines early!</p>
+        <ul>
+        <li>Your main report page should be called index.html.</li>
+        <li>Be sure to include and turn in all of the other files (such as images) that are linked in your report!</li>
+        <li>Use only <em>relative</em> paths to files, such as <pre>"./images/image.jpg"</pre>
+        Do <em>NOT</em> use absolulte paths, such as <pre>"/Users/student/Desktop/image.jpg"</pre></li>
+        <li>Pay close attention to your filename extensions. Remember that on UNIX systems (such as the instructional machines), capitalization matters. <pre>.png != .jpeg != .jpg != .JPG</pre>
+        <li>Be sure to adjust the permissions on your files so that they are world readable. For more information on this please see this tutorial: <a href="http://www.grymoire.com/Unix/Permissions.html">http://www.grymoire.com/Unix/Permissions.html</a></li>
+        <li>And again, test your website on the instructional machines early!</li>
+</div>
+</body>
+</html>
+
+
+
+
